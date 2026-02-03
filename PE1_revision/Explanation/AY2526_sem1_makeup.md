@@ -12,7 +12,10 @@ Iterate through the string with that condition in mind
 
 So the checker is acutally an unpaired open bracket counter
 
-```
+<details>
+<summary><b>Solution</b></summary>
+
+```python
 def count_matching_bracket(s):
     open_count = 0 
     pairs = 0
@@ -26,6 +29,8 @@ def count_matching_bracket(s):
                 pairs += 1
     return pairs
 ```
+
+</details>
 
 # Q2
 
@@ -43,7 +48,10 @@ Slicing is equivalent to floor dividing 10
 
 ## Final code
 
-```
+<details>
+<summary><b>Solution</b></summary>
+
+```python
 def count_adjacent_pairs(n):
     if n<=9:
         return 0
@@ -51,3 +59,5 @@ def count_adjacent_pairs(n):
             return 1+count_adjacent_pairs(n//10)
     return count_adjacent_pairs(n//10) 
 ```
+
+</details>
