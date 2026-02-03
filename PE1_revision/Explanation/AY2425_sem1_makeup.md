@@ -32,13 +32,12 @@ Honestly, it is kinda tuff if you don't play around with encode string of differ
 
 Try running encode abc and abcd to see how the function behaves when you have an odd/even length string
 
+```pycon
 >>> encode("abc")
-
 'bac'
-
 >>> encode("abcd")
-
 'dbac'
+```
 
 Notice that d is concantenated at the front of the string, and bac follows exactly like encode("abc")
 
