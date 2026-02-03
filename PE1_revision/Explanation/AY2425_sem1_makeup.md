@@ -13,13 +13,18 @@ We are not checking n mod 3 = 1 or 2 explicitly because that can just be shoved 
 Also notice that it is in the form of 2^term (starting from 0)
 
 ## Final code
-```
+<details>
+<summary><b>Solution</b></summary>
+
+```python
 def compute_series(n):
     res = 0
     for num in range(n):
         res +=  2**(-num) if num%3==0 else -2**(-num) 
     return round(res, 4)
 ```
+
+</details>
 
 # Q2
 ## Script design
@@ -40,8 +45,10 @@ Notice that d is concantenated at the front of the string, and bac follows exact
 It is either 1st or last character added and that depends on the length (is it odd or even) which should hint `if len(s)%2==...`
 
 ## Final code
+<details>
+<summary><b>Solution</b></summary>
 
-```
+```python
 def decode(s):
     if len(s) == 1:
         return s
@@ -49,3 +56,4 @@ def decode(s):
         return decode(s[1:]) + s[0]
     return decode(s[:-1]) + s[-1]
 ```
+</details>
