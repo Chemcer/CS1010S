@@ -22,9 +22,9 @@ var = 0 if <condition> else 1
 # is also the same as
 
 if <condition>:
-		var = 0
+	var = 0
 else:
-		var = 1
+	var = 1
 ```
 
 ## Recursion 
@@ -33,15 +33,15 @@ I usually don't include an else in my code (unless I copied the ans key)
 
 ```python 
 if <condition>:
-		return fx(....)
+	return fx(....)
 return fx(...) 
 
 # is also the same as 
 
 if <condition>:
-		return fx(...)
+	return fx(...)
 else:
-		return fx(...)
+	return fx(...)
 ```
 
 ## list comprehension 
