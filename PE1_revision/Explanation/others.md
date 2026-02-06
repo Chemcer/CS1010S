@@ -283,11 +283,10 @@ Same idea as above honestly
 def num_pairs(s):
     res = 0
     pos = 0
-    while len(s)!=1:
+    while pos<len(s)-2:
         if s[pos] == s[pos+1]:
             res +=1
         pos +=1
-        s = s[1:]
     return res
 ```
 
