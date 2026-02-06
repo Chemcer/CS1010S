@@ -1,6 +1,6 @@
 # Using this repo
 
-Most of the items are in md format, for best experience, open it in notion/obsidian/github (cntrl+shift+v)/whatever that previews md file
+Most of the items are in md format, for best experience, you can either view it on github or download and open it in notion/obsidian/vsc (cntrl+shift+v)/whatever that previews md file
 
 # Contents
 
@@ -14,7 +14,7 @@ Just to clear any potential questions
 
 ## Conditional statements
 
-If an else is required for variable referencing, I often use ternary operators 
+If an if else is required for variable referencing, I often use ternary operators 
 
 ```python
 var = 0 if <condition> else 1
@@ -29,7 +29,7 @@ else:
 
 ## Recursion 
 
-I usually don't include an else in my code (unless I copied the ans key) 
+I usually don't include an else in my code (unless I copied the ans key)
 
 ```python 
 if <condition>:
@@ -50,4 +50,4 @@ I'll edit when the time comes
 
 # Issues/errors
 
-Either msg me on telegram @chemcer or raise an issue 
+Either msg me on telegram @chemcer or raise an issue on github
