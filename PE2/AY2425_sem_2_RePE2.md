@@ -46,4 +46,39 @@ Deal with the easiest case first, instantly return true is elems1 is empty
 
 Case 2 is annoying since there 2 conditions to meet
 
-All objects in elems1 are the same means we check all elements in elems1
+All objects in elems1 are the same means we check all elements in elems1. Recall that if A = B, B = C,... then A = B = C =... Hence we check if every other elements in elems1 is the same as the 1st element in elems1. If one of it is not equal, then we can simply return False
+
+2nd condition is 'All objects is the same as at least one value in elems2', so we can simply iterate through elems2 to see if it appears once and has the same data type. Because of the data type, we cannot use elems1[0] in elems2 to check
+
+To check if all elements in elems1 are the same,
+
+```python
+for item in elems1:
+    if type(item) != type(elems1[0]) or item != elems[0]:
+        return False
+    else:
+        pass # passing the first criteria  
+```
+
+To check if elems1 exists in elems2
+
+```python
+for item in elems2:
+    if item == elems1[0] and type(item) == type(elems1[0]):
+        return True
+```
+
+## Solution
+
+Combine all those in sequence then end it with a return False (failing the conditions in case 2)
+
+Alternatively, use in built all and any function lol
+
+```python
+def all_in_any(elems1, elems2):
+    if not elems1:
+        return True
+    if all(type(elems1[0]) == type(x) and elems1[0]==x for x in elems1):
+        return any(type(elems1[0]) == type(x) and elems1[0]==x for x in elems2)
+    return False
+```
